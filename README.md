@@ -75,18 +75,24 @@ nasa-cmapss-hpc-feature-eng/
 └── README.md
 
 ```
-```text
+
 
 ### Installation
-1. **Clone the repository:**
+```text
+**Clone the repository:**
    ```bash
    git clone [https://github.com/HarshRastogi-git/nasa-cmapss-hpc-feature-eng.git](https://github.com/HarshRastogi-git/nasa-cmapss-hpc-feature-eng.git)
    cd nasa-cmapss-hpc-feature-eng
-
 ```
-Install dependencies:
+### Create Environment (Ensures isolation)
 ```text
-   pip install -r requirements.txt
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+### Install dependencies:
+```text
+ pip install -r requirements.txt
 ```
 ## ⚠️ Important: Action Required for Reproduction
 
