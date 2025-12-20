@@ -59,12 +59,13 @@ Download the dataset from the [NASA Open Data Portal](https://data.nasa.gov/Aero
 
 ### Directory Structure
 Place the raw `.txt` files into the `data/` directory as follows:
-```text
 nasa-cmapss-hpc-feature-eng/
 ├── data/
 │   ├── train_FD001.txt
 │   ├── test_FD001.txt
 │   └── RUL_FD001.txt
+
+```text
 
 ### Installation
 1. **Clone the repository:**
