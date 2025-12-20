@@ -57,6 +57,8 @@ The methodology, rigorous validation (using `GroupKFold`), and findings are deta
 ### Download
 Download the dataset from the [NASA Open Data Portal](https://data.nasa.gov/Aerospace/CMAPSS-Jet-Engine-Simulated-Data/699s-3j6v).
 
+```text
+
 ### Directory Structure
 Place the raw `.txt` files into the `data/` directory as follows:
 nasa-cmapss-hpc-feature-eng/
@@ -64,7 +66,13 @@ nasa-cmapss-hpc-feature-eng/
 │   ├── train_FD001.txt
 │   ├── test_FD001.txt
 │   └── RUL_FD001.txt
+├── notebooks/
+│   ├── 01_Baseline_model.ipynb
+│   └── 02_Proposed_Ablation_study.ipynb
+├── requirements.txt
+└── README.md
 
+```
 ```text
 
 ### Installation
