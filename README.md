@@ -54,8 +54,10 @@ The methodology, rigorous validation (using `GroupKFold`), and findings are deta
 * Python 3.8+
 * Conda or Virtualenv (recommended)
 
-### Download
-Download the dataset from the [NASA Open Data Portal](https://data.nasa.gov/Aerospace/CMAPSS-Jet-Engine-Simulated-Data/699s-3j6v).
+### Download Dataset
+The **NASA C-MAPSS Dataset** is publicly available. You can download it from either of the following sources:
+* [NASA Open Data Portal (Official)](https://data.nasa.gov/Aerospace/CMAPSS-Jet-Engine-Simulated-Data/699s-3j6v)
+* [Kaggle Dataset Mirror](https://www.kaggle.com/behrad37/nasa-cmaps)
 
 ```text
 
@@ -80,4 +82,20 @@ nasa-cmapss-hpc-feature-eng/
    ```bash
    git clone [https://github.com/HarshRastogi-git/nasa-cmapss-hpc-feature-eng.git](https://github.com/HarshRastogi-git/nasa-cmapss-hpc-feature-eng.git)
    cd nasa-cmapss-hpc-feature-eng
+
+```
+Install dependencies:
+```text
    pip install -r requirements.txt
+```
+## ⚠️ Important: Action Required for Reproduction
+
+> **Note:** To reproduce the results in this repository, you must manually update the data loading paths within the Jupyter Notebooks to match your local environment.
+
+### 🛠️ Path Configuration Instructions
+
+1.  **Open the Notebooks:** Navigate to the `notebooks/01_Baseline_model.ipynb` and `notebooks/02_Proposed_Ablation_study.ipynb` files.
+2.  **Locate Data Loading Cells:** Find the initial cells where the NASA C-MAPSS `.txt` files are loaded (typically using `pd.read_csv`).
+3.  **Update Absolute Paths:** Replace the existing hardcoded local paths with the **absolute path** to where you stored the dataset on your machine.
+    * *Example:* Change `C:/Users/Harsh/.../train_FD001.txt` to `/your/local/path/data/train_FD001.txt`.
+4.  **Parquet I/O Optimization:** In `02_Proposed_Ablation_study.ipynb`, ensure the `to_parquet` and `read_parquet` paths are also updated to a valid directory on your system. This is required to enable the **HPC-aware speedup** discussed in the paper.
