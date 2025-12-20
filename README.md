@@ -54,8 +54,21 @@ The methodology, rigorous validation (using `GroupKFold`), and findings are deta
 * Python 3.8+
 * Conda or Virtualenv (recommended)
 
+### Download
+Download the dataset from the [NASA Open Data Portal](https://data.nasa.gov/Aerospace/CMAPSS-Jet-Engine-Simulated-Data/699s-3j6v).
+
+### Directory Structure
+Place the raw `.txt` files into the `data/` directory as follows:
+```text
+nasa-cmapss-hpc-feature-eng/
+├── data/
+│   ├── train_FD001.txt
+│   ├── test_FD001.txt
+│   └── RUL_FD001.txt
+
 ### Installation
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/HarshRastogi-git/nasa-cmapss-hpc-feature-eng.git](https://github.com/HarshRastogi-git/nasa-cmapss-hpc-feature-eng.git)
    cd nasa-cmapss-hpc-feature-eng
+   pip install -r requirements.txt
