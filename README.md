@@ -56,8 +56,8 @@ The methodology, rigorous validation (using `GroupKFold`), and findings are deta
 
 ### Download Dataset
 The **NASA C-MAPSS Dataset** is publicly available. You can download it from either of the following sources:
-* [NASA Open Data Portal (Official)](https://data.nasa.gov/Aerospace/CMAPSS-Jet-Engine-Simulated-Data/699s-3j6v)
-* [Kaggle Dataset Mirror](https://www.kaggle.com/behrad37/nasa-cmaps)
+* [NASA Open Data Portal (Official)](https://data.nasa.gov/dataset/cmapss-jet-engine-simulated-data)
+* [Kaggle Dataset Mirror](https://www.kaggle.com/datasets/behrad3d/nasa-cmaps)
 
 ```text
 
